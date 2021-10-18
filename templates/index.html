@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel='stylesheet' href="{{ url_for('static', filename='css/index.css')}}">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <center>
+            <div id='topbar'>
+                <h2>Welcome back username</h2>
+            </div>
+            <br>
+            <div class='container'>
+                <div class='griditem'>
+                    <h3>Challenges</h3>
+                    <img src="{{ url_for('static', filename='images/challenge.png')}}" style="width:25%;">
+                    <p>
+                        Complete the challenges here to earn points and rewards and to save our planet Earth
+                    </p>
+                </div>
+                <div class='griditem'>
+                    <h3>Leaderboard</h3>
+                    <img src="{{ url_for('static', filename='images/leaderboard.png')}}" style="width:25%;">
+                    <p>
+                        Check your scores and see where you stand amongst other users on the leaderboard
+                    </p>
+                </div>
+                <div class='griditem' id="awareness">
+                    <h3>Awareness</h3>
+                    <a href='/awareness'><img src="{{ url_for('static', filename='images/awareness.png')}}" style="width:25%;"></a>
+                    <p>
+                        Get motivated by the latest articles which are presented to you as a clear and concise summary
+                    </p>
+                </div>
+            </div>
+        </center>
+    </body>
+</html>

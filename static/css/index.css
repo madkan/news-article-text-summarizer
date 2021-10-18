@@ -1,0 +1,24 @@
+body{
+    background-color: rgb(233, 222, 240);
+    color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 10px;
+    width:90%;
+}
+#topbar{
+    background-color: rgb(130, 92, 141);
+    width: 90%;
+    border-radius: 10px;
+    padding: 1px;
+}
+.griditem{
+    background-color: rgb(130, 92, 141);
+    border: 0px;
+    border-radius: 10px;
+    color: aliceblue;
+    padding:15px;
+}
