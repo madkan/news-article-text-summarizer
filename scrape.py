@@ -23,6 +23,7 @@ def getArticles():
     # article text and headings
     headings=[]
     articles=[]
+    links=[]
     for link in article_links[1:6]:
         article=requests.get(link)
         soup1=BeautifulSoup(article.content,'html5lib')
@@ -34,4 +35,5 @@ def getArticles():
         for i in ptag:
             fin+=i.text
         articles.append(fin)
-    return [headings,articles]
+        links.append(link)
+    return [headings,articles,links]
